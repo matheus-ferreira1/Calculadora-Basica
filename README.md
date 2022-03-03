@@ -4,4 +4,4 @@ Este é o meu primeiro projeto desenvolvido durante processo de aprendizado da l
 
 #### Atualização (3/3/2022)
 
-Implementação de inputs vindos do teclado, com suporte as teclas enter (calcular), esc (limpar tudo) e vírgulas (ou pontos) para para cálculoes de números float.
+Implementação de inputs vindos do teclado, com suporte as teclas enter (calcular), esc (limpar tudo) e vírgulas (ou pontos) para para cálculos com números float.
