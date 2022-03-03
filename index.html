@@ -9,7 +9,7 @@
     
 	</head>
 
-  <body style="background: #D9D9D9">
+  <body style="background: #D9D9D9" onkeydown="keyPressed(event)">
 
     <div class="container">
       <div class="row">
@@ -20,7 +20,7 @@
             <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
             
             <div class="row">
-              <button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+              <button onclick="calcular('acao', 'c')" type="button" class="btn btn-warning btn-lg clear font-weight-light">C</button>
               <button onclick="calcular('acao', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
               <button onclick="calcular('acao', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
             </div>
