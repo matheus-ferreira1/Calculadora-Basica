@@ -41,12 +41,22 @@ function keyPressed(e) {
   }
 
   if (keypressed === 'Enter') {
-    var valor_campo = eval(document.getElementById('resultado').value)
+    let telaAtual = document.getElementById('resultado').value
 
-    document.getElementById('resultado').value = valor_campo
+    if (telaAtual == '') {
+      alert('Insira os valores a serem calculados')
+    } else {
+      var valor_campo = eval(document.getElementById('resultado').value)
+      document.getElementById('resultado').value = valor_campo
+    }
   }
 
   if (keypressed === '0' || keypressed === '1' || keypressed === '2' || keypressed === '3' || keypressed === '4' || keypressed === '5' || keypressed === '6' || keypressed === '7' || keypressed === '8' || keypressed === '9') {
     document.getElementById('resultado').value += keypressed
+  }
+
+  if (keypressed === "Backspace") {
+    let telaAtual = document.getElementById('resultado').value
+    document.getElementById('resultado').value = telaAtual.substr(0, telaAtual.length - 1)
   }
 }
