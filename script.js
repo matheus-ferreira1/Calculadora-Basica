@@ -7,7 +7,13 @@ function calcular(tipo, valor) {
         }
 
         if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.') {
-          document.getElementById('resultado').value += valor
+          let ultimoChar = document.getElementById('resultado').value
+
+          if (ultimoChar.slice(-1) === '+' || ultimoChar.slice(-1) === '-' || ultimoChar.slice(-1) === '*' || ultimoChar.slice(-1) === '/' || ultimoChar.slice(-1) === '.') {
+            valor = ''
+          } else {
+            document.getElementById('resultado').value += valor
+          }
         }
 
         if (valor === '=') {
@@ -31,7 +37,13 @@ function keyPressed(e) {
   }
 
   if (keypressed === '+' || keypressed === '-' || keypressed === '*' || keypressed === '/' || keypressed === '.') {
-    document.getElementById('resultado').value += keypressed
+    let ultimoChar = document.getElementById('resultado').value
+    
+    if (ultimoChar.slice(-1) === '+' || ultimoChar.slice(-1) === '-' || ultimoChar.slice(-1) === '*' || ultimoChar.slice(-1) === '/' || ultimoChar.slice(-1) === '.') {
+      keypressed = ''
+    } else {
+      document.getElementById('resultado').value += keypressed
+    } 
   }
 
   //RECEBER O PARAMETRO VIRGULA E TRANSFORMA-LA EM PONTO
