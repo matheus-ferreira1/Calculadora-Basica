@@ -1,6 +1,8 @@
 # Calculadora com JavaScript, HTML, CSS e Bootstrap 4
 
-Este é o meu primeiro projeto desenvolvido durante processo de aprendizado da linguagem JavaScript. Feito utilizando recursos de HTML5 e CSS3, aliados ao uso do Bootstrap 4 para customização da página.
+Este é um recurso criado para colocar em prática os conhcecimentos de HTML, CSS, Boostrap e JavaScript adquiridos durante a minha jornada como desenvolvedor.
+
+O objetivo deste projeto é a criação de uma calculadora simples totalmente funcional, semelhante as calculadoras disponíveis em dispositivos móveis e desktop. Continuo implementando novas soluções no projeto conforme bugs são percebidos ou quando surgem novas ideias.
 
 ##
 
